@@ -1,4 +1,4 @@
-#SOC Home Lab Documentation
+# SOC Home Lab Documentation
 
 This folder contains setup notes and configuration walkthroughs for core components of my home lab. 
 Each section documents the process used to configure, test, and validate a specific service or function.
