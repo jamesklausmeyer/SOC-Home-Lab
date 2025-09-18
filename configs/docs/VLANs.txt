@@ -1,1 +1,5 @@
-
+Set up for VLANs including subnets and DHCP
+-------------------------------------------
+Created sub interfaces and subnets for work stations, management devices (router, switch, etc.), guest WiFi SSID, IoT WiFi SSID, and lab devices (servers and NUCs).
+Enabled DHCP on each sub interface and created reservations for most devices outside of WiFi clients
+Created firewall rules enabling most traffic between subnets with the exception of WiFi to sensitive networks
