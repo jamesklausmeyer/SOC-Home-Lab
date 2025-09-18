@@ -1,1 +1,12 @@
+Set up for VLANs including subnets and DHCP
+-------------------------------------------
+#DHCP/Firewall
+Created sub interfaces and subnets for work stations, management devices (router, switch, etc.), guest WiFi SSID, IoT WiFi SSID, and lab devices (servers and NUCs).
+Enabled DHCP on each sub interface and created reservations for most devices outside of WiFi clients which are assigned dynamically
+Created firewall rules enabling most traffic between subnets with the exception of WiFi to sensitive networks
 
+#Switch config
+Set up VLANs on the switch including IDs and member ports with PVIDs attached
+Switch to router uplink is a trunk port with all VLANs tagged, WAP port has guest and IoT VLANs tagged, all other devices are on access ports with their respective VLANs tagged
+Untagged native VLAN on all ports
+Verified connectivity with pings between all subnets, most issues were caused by misconfigured ports and firewall rules
