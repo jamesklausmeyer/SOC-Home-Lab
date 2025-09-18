@@ -1,7 +1,7 @@
 Set up for VLANs including subnets and DHCP
 -------------------------------------------
 ## Subnets
--Created sub interfaces and subnets for: 
+- Created sub interfaces and subnets for: 
 work stations 
 management devices (router, switch, etc.)
 guest WiFi SSID
