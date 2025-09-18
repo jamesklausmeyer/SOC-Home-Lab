@@ -13,7 +13,7 @@ These rules are designed to allow the bare minimum of traffic to pass through wh
   - Accessible only from trusted VLANs and lab for ICMP/core services
 
 - **Lab VLAN**
-  - Allows stateful communication for core services (DNS, logs, etc.) to trusted and management
+  - Allows stateful communication for core services (DNS via TCP, logs, etc.) to trusted and management
   - Outbound WAN allowed to access package managers and for iterative DNS
 
 ## Implementation Notes
