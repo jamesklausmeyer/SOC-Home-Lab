@@ -1,6 +1,9 @@
 # Set up for VLANs including subnets and DHCP
 This document describes the initial configuration of VLANs and firewall rules for basic segmentation on my home network.
 
+## Architecture
+One router, one switch, one AP
+
 ## Subnets
 - Created sub interfaces and subnets for: 
 - work stations 
@@ -30,3 +33,4 @@ This document describes the initial configuration of VLANs and firewall rules fo
 
 ## Lessons Learned
 - Always have a rollback plan before major changes: have out of band management and backup configs good to go 
+- Some AP's may need VLAN tagging natively
