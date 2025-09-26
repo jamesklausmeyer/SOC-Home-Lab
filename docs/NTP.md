@@ -3,10 +3,10 @@
 This document describes the setup of a lab NTP server using Chrony in a Docker container on a Debian host
 
 ## Architecture
-- **Chrony running inside a Docker container** to provide NTP services.  
+- **Chrony running inside a Docker container** to provide NTP services 
 - Container runs in **host network mode** and is granted `CAP_SYS_TIME` privileges to steer the host clock  
 - Debian host time synchronization services (systemd-timesyncd or host Chrony) are disabled to prevent conflicts  
-- Lab clients (pfSense, switches, APs, Windows desktops) point to this container for time synchronization  
+- Lab clients (pfSense, switches, APs, trusted workstations) point to this container for time synchronization  
 
 ## Installation and Configuration
 - Created a Chrony configuration file (`chrony.conf`) with:
@@ -32,7 +32,7 @@ This document describes the setup of a lab NTP server using Chrony in a Docker c
 - Monitored connected clients via `chronyc clients` and `chronyc tracking` commands  
 - Ensured only authorized VLANs can query the NTP server
 
-## Notes / Lessons Learned
+## Lessons Learned
 - Host system must not run competing NTP services  
 - `CAP_SYS_TIME` is required for the container to adjust host time  
 - Host network mode avoids bridging issues in LXC/Docker setups  
