@@ -24,12 +24,12 @@ This document describes the setup of a WireGuard VPN for secure remote access to
 - Added firewall rules to permit VPN traffic to Management and Lab subnets  
 - Adjusted NAT mode to hybrid and created outbound NAT rules to translate local VPN traffic to a public address
 
-## Troubleshooting / Lessons Learned
-- Initial misconfiguration of peer subnet CIDR on pfSense caused connectivity issues  
-- Firewall rules had protocol restrictions that were too strict, switching to “any” resolved access problems.  
-- Ensured resolvconf installed on client to handle DNS correctly over VPN
-
 ## Validation
 - Successfully established tunnel from laptop to home lab over public internet  
 - Confirmed access to Management and Lab VLANs while maintaining restrictions for other networks  
 - Tested DNS resolution and ping/traceroute from the VPN client to lab resources
+
+## Troubleshooting / Lessons Learned
+- Initial misconfiguration of peer subnet CIDR on pfSense caused connectivity issues  
+- Firewall rules had protocol restrictions that were too strict, switching to “any” resolved access problems.  
+- Ensured resolvconf installed on client to handle DNS correctly over VPN
