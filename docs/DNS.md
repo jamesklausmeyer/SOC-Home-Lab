@@ -33,4 +33,4 @@ This section documents the DNS setup my home lab, using Pi-hole and Unbound for 
 
 ## Lessons Learned
 - Allow container host bridges to handle VLAN tagging
-- Without adequate sources of entropy containers can take longer to start up
+- Without adequate sources of entropy, containers can take longer to start up
