@@ -1,15 +1,15 @@
 # DNS Setup Overview
 
-This section documents the DNS setup for the home lab, using Pi-hole and Unbound for recursive DNS with DNSSEC 
+This section documents the DNS setup my home lab, using Pi-hole and Unbound for recursive DNS with DNSSEC 
 
 ## Architecture
 - Two separate LXC containers hosted on Proxmox:
   - **Unbound** → Recursive DNS resolver and DNSSEC validator.
   - **Pi-hole** → DNS filtering and caching for clients.
-- Container interfaces rely on the host bridge for VLAN tagging.
+- Container interfaces rely on the host bridge interface for VLAN tagging and general networking.
 
 ## Installation and Configuration
-- Installed Debian images in LXC containers.
+- Created LXC containers based on Debian 12 images.
 - Installed Unbound via `apt` and Pi-hole through a curl request to the official website
 - Configured Unbound:
   - Root hints downloaded from official source for DNS root servers.
