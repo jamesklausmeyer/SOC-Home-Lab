@@ -27,3 +27,6 @@ This document describes the initial configuration of VLANs and firewall rules fo
 ## Validation
 - Verified connectivity with pings and traceroute between all subnets 
 - A few issues were caused by misconfigured ports and firewall rules
+
+## Lessons Learned
+- Always have a rollback plan before major changes: have out of band management and backup configs good to go 
