@@ -22,6 +22,6 @@ These rules are designed to allow the bare minimum of traffic to pass through wh
 - Logging is enabled on each implicit deny rule
 
 ## Validation
-- Used built in pfSense diagnostics to send pings between interfaces to ensure no intended inter VLAN traffic was permitted
+- Used built in pfSense diagnostics to send pings between interfaces to ensure no unintended inter VLAN traffic was permitted
 - Ran packet captures and observed performance of the rules
 
