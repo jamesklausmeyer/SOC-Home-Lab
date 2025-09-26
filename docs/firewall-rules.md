@@ -26,3 +26,7 @@ Six VLANs/subnets: trusted workstations, management devices, lab devices, VPN, g
 - Used built in pfSense diagnostics to send pings between interfaces to ensure no unintended inter VLAN traffic was permitted
 - Ran packet captures and observed performance of the rules
 
+## Lessons learned
+- Always enable logging on implicit deny rules for monitoring as well as troubleshooting purposes
+- Cut down rule lists with aliases and update them periodically
+- pfSense's firewall is stateful and doesn't require bi directional rules for the vast majority of traffic
