@@ -1,4 +1,5 @@
 Set up for VLANs including subnets and DHCP
+This document describes the initial configuration of VLANs and firewall rules for basic segmentation on my home network.
 -------------------------------------------
 ## Subnets
 - Created sub interfaces and subnets for: 
