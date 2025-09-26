@@ -30,3 +30,7 @@ This section documents the DNS setup my home lab, using Pi-hole and Unbound for 
 - Verified basic functionality with `dig` for standard domains
 - Verified DNSSEC validation using domains designed to pass/fail DNSSEC checks
 - Monitored Pi-hole logs and query statistics to confirm proper filtering and upstream resolution
+
+## Lessons Learned
+- Allow container host bridges to handle VLAN tagging
+- Without adequate sources of entropy containers can take longer to start up
