@@ -1,6 +1,4 @@
 # Firewall Rules Overview
-
-## Purpose
 These rules are designed to allow the bare minimum of traffic to pass through while maintaining intended inter VLAN communications and internet access
 
 ## Rule Categories
