@@ -103,9 +103,7 @@ After validating all individual components, the services were consolidated into 
 - Docker Engine
 - Containers:
   - Elasticsearch (storage backend, port 9200)
-
-Logstash (ingestion, parsing, SYSLOG/Beats/TCP, ports 5044/5000/514/9600)
-
-Kibana (web UI, port 5601)
+  - Logstash (ingestion, parsing, SYSLOG/Beats/TCP, ports 5044/5000/514/9600)
+  - Kibana (web UI, port 5601)
 
 External sources such as Filebeat, Windows hosts, and network devices were successfully tested and ingested into the pipeline.
