@@ -8,7 +8,7 @@ This project sets up a Debian 13 virtual machine running a fully containerized E
 
 The goal of the build was to recreate a realistic, modular, security-aligned logging pipeline similar to what you’d manage in a SOC or cloud environment.
 
-1. VM Deployment (Debian 13 Base System)
+## VM Deployment (Debian 13 Base System)
 
 The system runs on a Proxmox VM with:
 
@@ -24,7 +24,7 @@ Static DHCP lease (192.168.20.9)
 
 After installation, the VM was brought up to date and prepared with fundamental packages required for Docker and containerized services.
 
-2. Docker & Container Runtime Setup
+## Docker & Container Runtime Setup
 
 Docker and Docker Compose were installed to provide:
 
@@ -38,7 +38,7 @@ Persistent data volumes mapped into the VM filesystem
 
 A non-root user was added to the Docker group for operational convenience.
 
-3. Elasticsearch: Single-Node Logging Backend
+## Elasticsearch: Single-Node Logging Backend
 
 Elasticsearch was deployed as the foundational datastore.
 
@@ -60,7 +60,7 @@ Outcome
 
 Elasticsearch became reachable via http://<VM_IP>:9200, ready to receive log data from Logstash.
 
-4. Logstash: Central Log Ingestion & Parsing Engine
+## Logstash: Central Log Ingestion & Parsing Engine
 
 Logstash was configured to act as the primary log collection and parsing component.
 
@@ -89,7 +89,7 @@ Architecture Enhancements
 
 A dedicated Docker network (docker_elk) was created so all containers could communicate cleanly over internal hostnames.
 
-5. Kibana: Visualization and Analysis
+## Kibana: Visualization and Analysis
 
 Kibana was deployed to provide:
 
@@ -103,7 +103,7 @@ Dev Tools for querying logs with Elasticsearch DSL
 
 Kibana connected to Elasticsearch through the shared Docker network and was exposed to the LAN on port 5601.
 
-6. Filebeat / Syslog Integration
+## Filebeat / Syslog Integration
 
 During testing, some parsing and formatting issues surfaced with Filebeat, leading to:
 
@@ -123,7 +123,7 @@ Plain-text TCP streams
 
 JSON events
 
-7. Docker Compose Consolidation
+## Docker Compose Consolidation
 
 After validating all individual components, the services were consolidated into a single docker-compose.yml stack, including:
 
@@ -139,7 +139,7 @@ Health checks and authentication were later added to Elasticsearch, requiring up
 
 Once finalized, the stack could be brought online using a single command.
 
-8. Final Architecture
+## Final Architecture
 
 VM (Debian 13)
 → Docker Engine
