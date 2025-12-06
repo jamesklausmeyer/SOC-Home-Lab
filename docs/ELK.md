@@ -4,9 +4,9 @@ A lightweight, production-style logging pipeline built on a Debian VM.
 
 ## Overview
 
-This project sets up a Debian 13 virtual machine running a fully containerized ELK stack (Elasticsearch, Logstash, Kibana). The VM acts as a centralized logging server capable of receiving logs over Beats, TCP, or traditional syslog (TCP/UDP), parsing them, and indexing them into Elasticsearch for visualization in Kibana.
+- This project sets up a Debian 13 virtual machine running a fully containerized ELK stack (Elasticsearch, Logstash, Kibana). The VM acts as a centralized logging server capable of receiving logs over Beats, TCP, or traditional syslog (TCP/UDP), parsing them, and indexing them into Elasticsearch for visualization in Kibana.
 
-The goal of the build was to recreate a realistic, modular, security-aligned logging pipeline similar to what you’d manage in a SOC or cloud environment.
+- The goal of the build was to recreate a realistic, modular, security-aligned logging pipeline similar to what you’d manage in a SOC or cloud environment.
 
 ## VM Deployment (Debian 13 Base System)
 
