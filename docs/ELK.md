@@ -2,7 +2,7 @@ Debian 13 VM + Dockerized ELK Stack (Elasticsearch, Logstash, Kibana)
 
 A lightweight, production-style logging pipeline built on a Debian VM.
 
-Overview
+## Overview
 
 This project sets up a Debian 13 virtual machine running a fully containerized ELK stack (Elasticsearch, Logstash, Kibana). The VM acts as a centralized logging server capable of receiving logs over Beats, TCP, or traditional syslog (TCP/UDP), parsing them, and indexing them into Elasticsearch for visualization in Kibana.
 
